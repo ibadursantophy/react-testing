@@ -9,7 +9,7 @@ import TDD from "./TDD"
 test('Should render Hello',()=>{
   render(<TDD/>)
   const textElement = screen.getByText(/hello/i);
-  expect(textElement).toBeInTheDocument();
+  expect(textElement).not.toBeInTheDocument();
 
 })
 
